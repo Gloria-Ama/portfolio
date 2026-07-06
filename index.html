@@ -12,7 +12,7 @@
     <nav class="navbar">
       <h2 class="logo"><span>Gloria</span> Drafor</h2>
 
-      <ul class="nav-links">
+      <ul class="nav-links" id="navLinks">
         <li><a href="#home">Accueil</a></li>
         <li><a href="#about">À propos</a></li>
         <li><a href="#skills">Compétences</a></li>
@@ -25,6 +25,10 @@
         <span>|</span>
         <button>EN</button>
       </div>
+
+      <button class="nav-toggle" id="navToggle" aria-label="Ouvrir le menu">
+        <span></span><span></span><span></span>
+      </button>
     </nav>
   </header>
 
@@ -45,7 +49,7 @@
     </div>
 
     <div class="hero-image">
-      <img src="images/photo.jpg" alt="Photo de Gloria Drafo" />
+      <img src="images/photo.jpg" alt="Photo de Gloria Drafor" />
     </div>
   </section>
 
@@ -84,7 +88,7 @@
 
   <div class="approach-container">
 
-    <div class="approach-card">
+    <div class="approach-card reveal">
       <h3>Formation en Conception d'IUs</h3>
       <p>
         Je suis actuellement un cours spécialisé en conception d'interfaces utilisateurs (IUs) à l'Université. 
@@ -97,7 +101,7 @@
       </div>
     </div>
 
-    <div class="approach-card">
+    <div class="approach-card reveal">
       <h3>Conception Centrée Utilisateur</h3>
       <p>
         Mon approche repose sur l'expérience utilisateur (UX). J'apprends à structurer des interfaces 
@@ -106,7 +110,7 @@
       </p>
     </div>
 
-    <div class="approach-card">
+    <div class="approach-card reveal">
       <h3>Évaluation & Qualité</h3>
       <p>
         Pour garantir la pertinence d'un design, j'applique des méthodes d'analyse rigoureuses comme 
@@ -123,7 +127,7 @@
 
   <div class="skills-category">
 
-    <div class="category-card">
+    <div class="category-card reveal">
       <h3>Conception Web</h3>
       <div class="skills-grid">
         <div>HTML</div>
@@ -134,7 +138,7 @@
       </div>
     </div>
 
-    <div class="category-card">
+    <div class="category-card reveal">
       <h3>Langages de programmation</h3>
       <div class="skills-grid">
         <div>Python</div>
@@ -144,7 +148,7 @@
       </div>
     </div>
 
-    <div class="category-card">
+    <div class="category-card reveal">
       <h3>Bases de données</h3>
       <div class="skills-grid">
         <div>SQL</div>
@@ -153,7 +157,7 @@
       </div>
     </div>
 
-    <div class="category-card">
+    <div class="category-card reveal">
       <h3>Frameworks & Bibliothèques</h3>
       <div class="skills-grid">
         <div>Django</div>
@@ -163,14 +167,14 @@
       </div>
     </div>
 
-    <div class="category-card">
+    <div class="category-card reveal">
       <h3>Développement mobile</h3>
       <div class="skills-grid">
         <div>Android Studio</div>
       </div>
     </div>
 
-    <div class="category-card">
+    <div class="category-card reveal">
       <h3>Outils de développement</h3>
       <div class="skills-grid">
         <div>Git/GitHub</div>
@@ -180,7 +184,7 @@
       </div>
     </div>
 
-    <div class="category-card">
+    <div class="category-card reveal">
       <h3>Conception logicielle</h3>
       <div class="skills-grid">
         <div>UML</div>
@@ -188,7 +192,7 @@
       </div>
     </div>
 
-    <div class="category-card">
+    <div class="category-card reveal">
       <h3>Design & Visualisation</h3>
       <div class="skills-grid">
         <div>Photoshop</div>
@@ -197,7 +201,7 @@
       </div>
     </div>
 
-    <div class="category-card">
+    <div class="category-card reveal">
       <h3>Outils collaboratifs</h3>
       <div class="skills-grid">
         <div>Word</div>
@@ -207,7 +211,7 @@
       </div>
     </div>
 
-    <div class="category-card">
+    <div class="category-card reveal">
       <h3>Compétences professionnelles</h3>
       <div class="skills-grid">
         <div>Résolution de problèmes</div>
@@ -358,10 +362,12 @@
   href="https://studysuccess.netlify.app"
   target="_blank"
   rel="noopener noreferrer"
-  class="future-card"
+  class="future-card reveal"
 >
-  <img src="images/service.jpg" alt="Site de services">
-
+  <div class="future-thumb">
+    <span class="future-badge">En ligne</span>
+    <img src="images/service.jpg" alt="Site de services">
+  </div>
   <div class="future-content">
     <h3>Site de services</h3>
     <p>Consulter le projet</p>
@@ -372,38 +378,38 @@
   href="https://gloria-ama.github.io/MemoMission/"
   target="_blank"
   rel="noopener noreferrer"
-  class="future-card"
+  class="future-card reveal"
 >
-  <img src="images/memory-game.jpg" alt="Jeu de mémoire">
-
+  <div class="future-thumb">
+    <span class="future-badge">En ligne</span>
+    <img src="images/memory-game.jpg" alt="Jeu de mémoire">
+  </div>
   <div class="future-content">
     <h3>Jeu de mémoire – MémoMission</h3>
     <p>Jouer au jeu</p>
   </div>
 </a>
 
-    <a href="pages/ecommerce.html" class="future-card">
-
-      <img src="images/ecommerce.jpg" alt="Site e-commerce">
-
-      <div class="future-content">
-
-        <h3>Site E-Commerce</h3>
-
+    <a href="https://gloria-ama.github.io/Odessa/" target="_blank" rel="noopener noreferrer" class="future-card reveal">
+      <div class="future-thumb">
+        <span class="future-badge">En ligne</span>
+        <img src="images/ecommerce.jpg" alt="Site e-commerce Odessa">
       </div>
-
+      <div class="future-content">
+        <h3>Odessa — Bijoux vintage</h3>
+        <p>Voir le prototype</p>
+      </div>
     </a>
 
-    <a href="pages/dashboard.html" class="future-card">
-
-      <img src="images/dashboard.png" alt="Analyse et visualisation">
-
-      <div class="future-content">
-
-        <h3>Analyse & Visualisation</h3>
-
+    <a href="pages/dashboard.html" class="future-card reveal">
+      <div class="future-thumb">
+        <span class="future-badge">À venir</span>
+        <img src="images/dashboard.png" alt="Analyse et visualisation">
       </div>
-
+      <div class="future-content">
+        <h3>Analyse & Visualisation</h3>
+        <p>En savoir plus</p>
+      </div>
     </a>
 
   </div>
@@ -412,12 +418,17 @@
   <section id="contact" class="section contact-section">
     <p class="section-label">Contact</p>
     <h2><span>Me</span> contacter</h2>
-    <p>Email : draforamagloria@gmail.com</p>
-    <p>GitHub : Gloria-Ama</p>
+    <p>Disponible pour un stage, un contrat ou une collaboration.</p>
+    <div class="contact-links">
+      <a href="mailto:draforamagloria@gmail.com">✉️ draforamagloria@gmail.com</a>
+      <a href="https://github.com/Gloria-Ama" target="_blank" rel="noopener noreferrer">GitHub — Gloria-Ama</a>
+    </div>
   </section>
 
   <footer>
-    <p>© 2026 Gloria Drafo. Tous droits réservés.</p>
+    <p>© 2026 Gloria Drafor. Tous droits réservés.</p>
   </footer>
+
+  <script src="js/main.js"></script>
 </body>
 </html>
