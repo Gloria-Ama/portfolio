@@ -1,0 +1,23 @@
+@media (max-width: 900px) {
+  .approach-container, .skills-category { grid-template-columns: repeat(2, 1fr); }
+  .project-row { grid-template-columns: 40px 1fr; }
+  .project-thumb { grid-column: 1 / -1; width: 100%; height: 180px; order: 3; }
+}
+
+@media (max-width: 720px) {
+  .nav-links {
+    position: fixed; top: 66px; left: 0; right: 0; background: var(--bg);
+    flex-direction: column; padding: 20px 32px; gap: 18px; border-bottom: 1px solid var(--border);
+    transform: translateY(-140%); transition: transform var(--dur); z-index: 90;
+  }
+  .nav-links.open { transform: translateY(0); }
+  .nav-toggle { display: flex; }
+  .hero { flex-direction: column-reverse; text-align: center; padding-top: 50px; }
+  .hero-text { max-width: 100%; }
+  .hero > .hero-text > p.lead { margin-left: auto; margin-right: auto; }
+  .hero-buttons { justify-content: center; }
+  .hero h1 { font-size: 38px; }
+  .hero-image { width: 180px; height: 180px; }
+  .approach-container, .skills-category { grid-template-columns: 1fr; }
+  .language { display: none; }
+}

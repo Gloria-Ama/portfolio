@@ -49,3 +49,30 @@ if (sections.length && navAnchors.length && "IntersectionObserver" in window) {
   );
   sections.forEach((s) => navObserver.observe(s));
 }
+
+// Modale CV
+function openCV() {
+  const modal = document.getElementById("cvModal");
+  const frame = document.getElementById("cvFrame");
+  const lang = localStorage.getItem("portfolioLang") || "fr";
+  const file =
+    lang === "en" ? "assets/CV_English_GloriaDrafor.pdf" : "assets/CV_Francais_GloriaDrafor.pdf";
+  frame.src = file;
+  document.getElementById("cvOpenNewTab").href = file;
+  modal.classList.add("open");
+  document.body.style.overflow = "hidden";
+}
+
+function closeCV() {
+  const modal = document.getElementById("cvModal");
+  modal.classList.remove("open");
+  document.getElementById("cvFrame").src = "";
+  document.body.style.overflow = "";
+}
+
+document.getElementById("cvModal").addEventListener("click", (e) => {
+  if (e.target.id === "cvModal") closeCV();
+});
+document.addEventListener("keydown", (e) => {
+  if (e.key === "Escape") closeCV();
+});
