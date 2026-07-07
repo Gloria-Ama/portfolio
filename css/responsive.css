@@ -19,5 +19,5 @@
   .hero h1 { font-size: 38px; }
   .hero-image { width: 180px; height: 180px; }
   .approach-container, .skills-category { grid-template-columns: 1fr; }
-  .language { display: none; }
+  .language button { padding: 5px 10px; font-size: 11px; }
 }
